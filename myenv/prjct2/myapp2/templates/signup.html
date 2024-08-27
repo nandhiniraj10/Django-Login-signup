@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Signup Page</h1>
+<br>
+<h1>{{ msg }}</h1>
+<br>
+<form action="create" method="POST">
+    {% csrf_token %}
+<table align="center">
+    <tr>
+    <td><label for="fn">First Name</label></td>
+    <td><input type="text" id="fn" name="fn" value="{{f}}" required></td>
+    </tr>
+
+    <tr>
+    <td><label for="ln">Last Name</label></td>
+    <td><input type="text" id="ln" name="ln" value="{{l}}" required></td>
+    </tr>
+
+    <tr>
+    <td><label for="sid">Email Id</label></td>
+    <td><input type="email" id="sid" name="sid" value="{{id}}" required></td>
+    </tr>
+    
+    <tr>
+    <td><label for="spd">Create Password</label></td>
+    <td><input type="password" id="spd" name="spd"  maxlength="8"></td>
+    </tr>
+    
+    <tr>
+    <td><label for="spd1">Re-Enter Password</label></td>
+    <td><input type="password" id="spd1" name="spd1" required></td>    
+    </tr>
+
+    <tr>
+    <td align="center"><input type="reset" value="Clear"></td>
+    <td align="center"><input type="submit" value="Signup" style="background-color: blue; color: aliceblue;"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
