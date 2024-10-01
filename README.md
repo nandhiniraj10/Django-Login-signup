@@ -7,7 +7,7 @@ This Django project implements basic user authentication functionality with feat
 This view renders the homepage **(index.html) **when accessed.
 It acts as a simple entry point for the application, without requiring authentication.<br>
 
-**User Signup (signup view):**
+**User Signup (signup view):**<br>
 Users can register by providing a username, password, and confirmation of the password.<br>
 Password validation ensures that both **password **and **confirm_password** match.<br>
 It checks if the username already exists and displays relevant messages using Django's messaging framework **(django.contrib.messages)**.<br>
@@ -21,6 +21,7 @@ Upon successful login, the user is redirected to the homepage, while failed atte
 **User Logout (logout_user view):**<br>
 This view logs out the currently authenticated user using Django’s **logout** function.<br>
 After logging out, the user is redirected back to the homepage.<br>
+
 **Technologies & Tools:**<br>
 **Django's Built-in User Model: **The project uses Django's built-in **User** model to manage user credentials and authentication.<br>
 **Django Auth System:** The **auth** module is used to handle authentication and session management.<br>
