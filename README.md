@@ -4,12 +4,12 @@ This Django project implements basic user authentication functionality with feat
 
 **Main Features:**<br>
 **Home Page (home view):**<br>
-This view renders the homepage **(index.html) **when accessed.
+This view renders the homepage **(index.html) ** when accessed.
 It acts as a simple entry point for the application, without requiring authentication.<br>
 
 **User Signup (signup view):**<br>
 Users can register by providing a username, password, and confirmation of the password.<br>
-Password validation ensures that both **password **and **confirm_password** match.<br>
+Password validation ensures that both **password ** and **confirm_password** match.<br>
 It checks if the username already exists and displays relevant messages using Django's messaging framework **(django.contrib.messages)**.<br>
 If successful, the user is created and redirected to the login page.<br>
 
