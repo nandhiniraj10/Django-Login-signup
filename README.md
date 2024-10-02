@@ -1,8 +1,8 @@
-**Project Overview:**<br>
+<h2>Project Overview:</h2><br>
 
 This Django project implements basic user authentication functionality with features like user signup, login, and logout. It interacts with the built-in Django authentication system  ** (django.contrib.auth)**  to manage user sessions securely.<br>
 
-**Main Features:**<br>
+<h2>Main Features:</h2><br>
 **1.Home Page (home view):**<br>This view renders the homepage  **(index.html)** when accessed.<br>
 It acts as a simple entry point for the application, without requiring authentication.<br>
 
